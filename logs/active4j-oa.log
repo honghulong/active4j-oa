@@ -1,0 +1,94 @@
+[active4j-oa] [active4j-oa] [2026-05-29 00:16:03,114] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 00:16:03,128] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 01:00:00,007] [INFO] [SystemTimerTaskService.java] [taskCron] [scheduling-1:40] [] [] [系统固定定时任务方式开始，当前时间：2026-05-29 01:00:00]
+[active4j-oa] [active4j-oa] [2026-05-29 01:16:03,114] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 01:16:03,117] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 02:16:03,115] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 02:16:03,118] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 03:16:03,113] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 03:16:03,122] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 04:16:03,114] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 04:16:03,119] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 05:16:03,114] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 05:16:03,122] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 06:16:03,114] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 06:16:03,122] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 07:16:03,113] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:275] [] [] [Validating all active sessions...]
+[active4j-oa] [active4j-oa] [2026-05-29 07:16:03,119] [INFO] [AbstractValidatingSessionManager.java] [validateSessions] [SessionValidationThread-1:308] [] [] [Finished session validation.  No sessions were stopped.]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:06,763] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-4:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_ru_execution e, act_ru_task t WHERE b.ID = e.BUSINESS_KEY_ AND e.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+
+### The error may exist in file [D:\hongmengProjects\active4j-oa\target\classes\mybatis\activiti\dao\xml\WorkflowDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_ru_execution e, act_ru_task t WHERE b.ID = e.BUSINESS_KEY_ AND e.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:19,313] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-7:85] [] [] [mv全局异常, 异常信息:null]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:33,636] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-2:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM OA_WORK_MEET_TYPE 
+
+### The error may exist in com/active4j/hr/work/dao/OaWorkMeetTypeDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM OA_WORK_MEET_TYPE 
+]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:34,270] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-9:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM OA_WORK_MEET_ROOM 
+
+### The error may exist in com/active4j/hr/work/dao/OaWorkMeetRoomDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM OA_WORK_MEET_ROOM 
+]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:36,780] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-1:85] [] [] [mv全局异常, 异常信息:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist
+### The error may exist in com/active4j/hr/work/dao/OaWorkMeetRoomDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  ID,NAME,STATUS,PERSONS,MEMO,versions,CREATE_NAME,CREATE_DATE,UPDATE_NAME,UPDATE_DATE  FROM OA_WORK_MEET_ROOM     WHERE STATUS = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:38,350] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-7:85] [] [] [mv全局异常, 异常信息:
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist
+### The error may exist in com/active4j/hr/work/dao/OaWorkMeetRoomDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  ID,NAME,STATUS,PERSONS,MEMO,versions,CREATE_NAME,CREATE_DATE,UPDATE_NAME,UPDATE_DATE  FROM OA_WORK_MEET_ROOM     WHERE STATUS = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'active4j-oa.OA_WORK_MEET_ROOM' doesn't exist]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:41,509] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-3:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_ru_execution e, act_ru_task t WHERE b.ID = e.BUSINESS_KEY_ AND e.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+
+### The error may exist in file [D:\hongmengProjects\active4j-oa\target\classes\mybatis\activiti\dao\xml\WorkflowDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_ru_execution e, act_ru_task t WHERE b.ID = e.BUSINESS_KEY_ AND e.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:43,338] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-5:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_hi_procinst p, act_hi_taskinst t WHERE b.ID = p.BUSINESS_KEY_ AND p.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+
+### The error may exist in file [D:\hongmengProjects\active4j-oa\target\classes\mybatis\activiti\dao\xml\WorkflowDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM wf_base b, act_hi_procinst p, act_hi_taskinst t WHERE b.ID = p.BUSINESS_KEY_ AND p.PROC_INST_ID_ = t.PROC_INST_ID_ AND t.ASSIGNEE_ = ? ) TOTAL 
+]
+[active4j-oa] [active4j-oa] [2026-05-29 07:25:44,450] [ERROR] [GlobalExceptionHandler.java] [exception] [http-nio-9004-exec-2:80] [] [] [ajax全局异常, 异常信息:nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM act_ru_identitylink a LEFT JOIN act_ru_task t ON a.TASK_ID_ = t.ID_ LEFT JOIN act_ru_execution e ON t.PROC_INST_ID_ = e.PROC_INST_ID_ LEFT JOIN wf_base B ON E.BUSINESS_KEY_ = B.ID WHERE a.USER_ID_ = ? AND a.type_ = 'candidate' AND e.BUSINESS_KEY_ IS NOT NULL ) TOTAL 
+
+### The error may exist in file [D:\hongmengProjects\active4j-oa\target\classes\mybatis\activiti\dao\xml\WorkflowDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### Cause: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: Method queryTotal execution error of sql : 
+ SELECT COUNT(1) FROM ( SELECT DISTINCT B.ID, B.APPLY_DATE, B.APPLY_NAME, B.BUSINESS_ID, B.CATEGORY_ID, B.CREATE_DATE, B.CREATE_NAME, B.LEVEL, B.NAME, B.PROJECT_NO, B.STATUS, B.USER_NAME, B.WORKFLOW_ID, B.WORKFLOW_NAME FROM act_ru_identitylink a LEFT JOIN act_ru_task t ON a.TASK_ID_ = t.ID_ LEFT JOIN act_ru_execution e ON t.PROC_INST_ID_ = e.PROC_INST_ID_ LEFT JOIN wf_base B ON E.BUSINESS_KEY_ = B.ID WHERE a.USER_ID_ = ? AND a.type_ = 'candidate' AND e.BUSINESS_KEY_ IS NOT NULL ) TOTAL 
+]
